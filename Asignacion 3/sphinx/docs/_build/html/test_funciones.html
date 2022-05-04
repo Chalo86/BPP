@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>test_funciones module &mdash; Asignacion #2 de BPP v.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="funciones module" href="funciones.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Asignacion #2 de BPP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">code</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="errors.html">errors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="funciones.html">funciones module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">test_funciones module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#descripcion">Descripción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#librerias-y-modulos">Librerías y módulos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Asignacion #2 de BPP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">code</a> &raquo;</li>
+      <li>test_funciones module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/test_funciones.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-test_funciones">
+<span id="test-funciones-module"></span><h1>test_funciones module<a class="headerlink" href="#module-test_funciones" title="Permalink to this headline"></a></h1>
+<section id="descripcion">
+<h2>Descripción<a class="headerlink" href="#descripcion" title="Permalink to this headline"></a></h2>
+<p>Este es el sript principal de la asignación, en el se definen las pruebas unitarias diseñadas para el test.</p>
+<p>Las pruebas creadas son:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_func_create_df" title="test_funciones.TestAsignacionFunc.test_func_create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_func_create_df()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_func_check" title="test_funciones.TestAsignacionFunc.test_func_check"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_func_check()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_df_qty_columns" title="test_funciones.TestAsignacionFunc.test_df_qty_columns"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_df_qty_columns()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_df_columns" title="test_funciones.TestAsignacionFunc.test_df_columns"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_df_columns()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_df_columns_not_empty" title="test_funciones.TestAsignacionFunc.test_df_columns_not_empty"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_df_columns_not_empty()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_input_column" title="test_funciones.TestAsignacionFunc.test_input_column"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_input_column()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_input_column2" title="test_funciones.TestAsignacionFunc.test_input_column2"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_input_column2()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_input_sep" title="test_funciones.TestAsignacionFunc.test_input_sep"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_input_sep()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.test_input_empty_column" title="test_funciones.TestAsignacionFunc.test_input_empty_column"><code class="xref py py-func docutils literal notranslate"><span class="pre">TestAsignacionFunc.test_input_empty_column()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.test_fail_path" title="test_funciones.ExpectedFailureTest.test_fail_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">ExpectedFailureTest.test_fail_path()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.test_fail_path2" title="test_funciones.ExpectedFailureTest.test_fail_path2"><code class="xref py py-func docutils literal notranslate"><span class="pre">ExpectedFailureTest.test_fail_path2()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.test_fail_column" title="test_funciones.ExpectedFailureTest.test_fail_column"><code class="xref py py-func docutils literal notranslate"><span class="pre">ExpectedFailureTest.test_fail_column()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.test_fail_column2" title="test_funciones.ExpectedFailureTest.test_fail_column2"><code class="xref py py-func docutils literal notranslate"><span class="pre">ExpectedFailureTest.test_fail_column2()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.test_fail_sep" title="test_funciones.ExpectedFailureTest.test_fail_sep"><code class="xref py py-func docutils literal notranslate"><span class="pre">ExpectedFailureTest.test_fail_sep()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.test_fail_sep2" title="test_funciones.ExpectedFailureTest.test_fail_sep2"><code class="xref py py-func docutils literal notranslate"><span class="pre">ExpectedFailureTest.test_fail_sep2()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.test_fail_sep3" title="test_funciones.ExpectedFailureTest.test_fail_sep3"><code class="xref py py-func docutils literal notranslate"><span class="pre">ExpectedFailureTest.test_fail_sep3()</span></code></a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Es necesario disponer de los siguientes ficheros csv para poder realizar las pruebas. 
+Asimismo, deben encontrase en el mismo directorio donde se almacene los archivos <code class="docutils literal notranslate"><span class="pre">.py</span></code></p>
+<ol class="arabic simple">
+<li><p><em>prueba.csv</em></p></li>
+<li><p><em>prueba2.csv</em></p></li>
+<li><p><em>prueba3.csv</em></p></li>
+</ol>
+</div>
+</section>
+<section id="librerias-y-modulos">
+<h2>Librerías y módulos<a class="headerlink" href="#librerias-y-modulos" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">unittest</span></code> librería utilizada para para el desarrollo de las pruebas</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> librería requerida para la creación y gestión de DataFrames</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">assert_fram_equal</span></code> método de <code class="docutils literal notranslate"><span class="pre">pandas.testing</span></code> requerido para evaluar si DataFrames son iguales</p></li>
+<li><p><a class="reference internal" href="errors.html#module-errors" title="errors"><code class="xref py py-mod docutils literal notranslate"><span class="pre">errors</span></code></a>: Excepciones especialmente definidas para la aplicación</p></li>
+<li><p><a class="reference internal" href="funciones.html#module-funciones" title="funciones"><code class="xref py py-mod docutils literal notranslate"><span class="pre">funciones</span></code></a>: contiene las funciones que vamos a probar <code class="docutils literal notranslate"><span class="pre">create_df</span></code> y <code class="docutils literal notranslate"><span class="pre">check</span></code></p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TestAsignacionFunc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<p>Clase que contiene todos los test unitarios donde se espera una respuesta positiva luego de la evaluación</p>
+<p>La clase <a class="reference internal" href="#test_funciones.TestAsignacionFunc" title="test_funciones.TestAsignacionFunc"><code class="xref py py-class docutils literal notranslate"><span class="pre">TestAsignacionFunc</span></code></a> hereda sus atributos de la clase <code class="docutils literal notranslate"><span class="pre">TestCase</span></code> del paquete <code class="docutils literal notranslate"><span class="pre">unittest</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>unittest.TestCase</strong> (<em>class</em>) – Clase del paquete <code class="docutils literal notranslate"><span class="pre">unittest</span></code> de la cual heredaremos sus atributos</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.setUp" title="Permalink to this definition"></a></dt>
+<dd><p><a class="reference internal" href="#test_funciones.TestAsignacionFunc.setUp" title="test_funciones.TestAsignacionFunc.setUp"><code class="xref py py-func docutils literal notranslate"><span class="pre">setUp()</span></code></a> es un método reservado de la clase <code class="docutils literal notranslate"><span class="pre">TestCase</span></code> que permite definir un contructor para los
+casos de prueba.</p>
+<p>Este método se ejecutará antes que las pruebas para asegurar que las variables esten 
+disponibles para las pruebas, evitando la repetición de la creación de dichas variables en cada prueba</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recordar que se debe disponer de los ficheros <em>csv</em> en el directorio del proyecto
+En caso de no tenerlos la prueba se cancelará haciendo uso del método <code class="docutils literal notranslate"><span class="pre">skipTest()</span></code></p>
+<p>De igual forma es igual de importante poseer los ficheros originales ya que las pruebas 
+consisten en validar la igualdad de los DataFarmes generados</p>
+</div>
+<p><strong>DataFrames de control</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]],</span>
+                    <span class="n">columns</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">],</span>
+                    <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float64&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+                    <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">]],</span>
+                    <span class="n">columns</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_func_create_df">
+<span class="sig-name descname"><span class="pre">test_func_create_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_func_create_df" title="Permalink to this definition"></a></dt>
+<dd><p>Pureba para validar que la función <a class="reference internal" href="funciones.html#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.create_df()</span></code></a> crea un DataFrame correctamente</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_func_check">
+<span class="sig-name descname"><span class="pre">test_func_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_func_check" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de la función <a class="reference internal" href="funciones.html#funciones.check" title="funciones.check"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.check()</span></code></a> para transformar columnas del DataFrame a tipo numérico</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_df_qty_columns">
+<span class="sig-name descname"><span class="pre">test_df_qty_columns</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_df_qty_columns" title="Permalink to this definition"></a></dt>
+<dd><p>Validación de la cantidad de columnas en ambos DataFrames creados por la función <a class="reference internal" href="funciones.html#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.create_df()</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_df_columns">
+<span class="sig-name descname"><span class="pre">test_df_columns</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_df_columns" title="Permalink to this definition"></a></dt>
+<dd><p>Validación de que todas las columnas requeridas esten incluidas en el DataFrame #1 creado</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_df_columns_not_empty">
+<span class="sig-name descname"><span class="pre">test_df_columns_not_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_df_columns_not_empty" title="Permalink to this definition"></a></dt>
+<dd><p>Validación de que las columnas del DataFrame #1 creado no estan vacías</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_input_column">
+<span class="sig-name descname"><span class="pre">test_input_column</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_input_column" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de la función <a class="reference internal" href="funciones.html#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.create_df()</span></code></a> para inputs de entrada: Faltan columnas por indicar</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_input_column2">
+<span class="sig-name descname"><span class="pre">test_input_column2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_input_column2" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de la función <a class="reference internal" href="funciones.html#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.create_df()</span></code></a> para inputs de entrada: Columnas de más indicadas</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_input_sep">
+<span class="sig-name descname"><span class="pre">test_input_sep</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_input_sep" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de la función <a class="reference internal" href="funciones.html#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.create_df()</span></code></a> para inputs de entrada: Separador incorrecto</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sep</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;,&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.TestAsignacionFunc.test_input_empty_column">
+<span class="sig-name descname"><span class="pre">test_input_empty_column</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.TestAsignacionFunc.test_input_empty_column" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de la función <a class="reference internal" href="funciones.html#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.create_df()</span></code></a> para inputs de entrada: Columna vacia</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Esta prueba unitaria hace uso del fichero <code class="docutils literal notranslate"><span class="pre">prueba3.csv</span></code> para la creación del 
+DataFrame y su posterior prueba</p>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;prueba3.csv&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ExpectedFailureTest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<p>Clase que contiene todos las pruebas unitarias donde se espera un fallo durante la evaluación</p>
+<p>La clase <a class="reference internal" href="#test_funciones.ExpectedFailureTest" title="test_funciones.ExpectedFailureTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">ExpectedFailureTest</span></code></a> hereda sus atributos de la clase <code class="docutils literal notranslate"><span class="pre">TestCase</span></code> del paquete <code class="docutils literal notranslate"><span class="pre">unittest</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Los métdos definidos dentro de esta clase van acompañados del decorador <code class="docutils literal notranslate"><span class="pre">&#64;unitttest.expectedFailure</span></code></p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>unittest.TestCase</strong> (<em>class</em>) – Clase del paquete <cite>unittest</cite> de la cual heredaremos sus atributos</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.setUp" title="Permalink to this definition"></a></dt>
+<dd><p><a class="reference internal" href="#test_funciones.ExpectedFailureTest.setUp" title="test_funciones.ExpectedFailureTest.setUp"><code class="xref py py-func docutils literal notranslate"><span class="pre">setUp()</span></code></a> es un método reservado de la clase <code class="docutils literal notranslate"><span class="pre">TestCase</span></code> que permite definir un contructor para los
+casos de prueba.</p>
+<p>Este método se ejecutará antes que las pruebas para asegurar que las variables esten 
+disponibles para las pruebas, evitando la repetición de la creación de dichas variables en cada prueba</p>
+<p>Durante esta implementación se han definido los 3 argumentos principales para la función <a class="reference internal" href="funciones.html#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">funciones.create_df()</span></code></a></p>
+<p><strong>Variables:</strong></p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">path</span></code>: Directorio donde se encuentra el fichero <em>csv</em> a utilizar -&gt; <code class="docutils literal notranslate"><span class="pre">'prueba.csv'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">columns</span></code>: Lista con las columnas definidas para la pureba -&gt; <code class="docutils literal notranslate"><span class="pre">['a','b','c','d']</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">seps</span></code>: Separador requerido para la correcta creación del DataFrame -&gt; <code class="docutils literal notranslate"><span class="pre">[';']</span></code></p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.test_fail_path">
+<span class="sig-name descname"><span class="pre">test_fail_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.test_fail_path" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de error por el tipo del argumento de <code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+<p>Definición errada del argumento <cite>path</cite> con un tipo <code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">path</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.test_fail_path2">
+<span class="sig-name descname"><span class="pre">test_fail_path2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.test_fail_path2" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de error por el tipo del argumento de <code class="docutils literal notranslate"><span class="pre">path</span></code></p>
+<p>Definición errada del argumento <cite>path</cite> con un tipo <code class="docutils literal notranslate"><span class="pre">list</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">path</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.test_fail_column">
+<span class="sig-name descname"><span class="pre">test_fail_column</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.test_fail_column" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de error por el tipo del argumento de <code class="docutils literal notranslate"><span class="pre">columns</span></code></p>
+<p>Definición errada del argumento <cite>columns</cite> con un tipo <code class="docutils literal notranslate"><span class="pre">int</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.test_fail_column2">
+<span class="sig-name descname"><span class="pre">test_fail_column2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.test_fail_column2" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de error por el tipo del argumento de <code class="docutils literal notranslate"><span class="pre">columns</span></code></p>
+<p>Definición errada del argumento <cite>columns</cite> con un tipo <code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">columns</span> <span class="o">=</span> <span class="s2">&quot;2&quot;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.test_fail_sep">
+<span class="sig-name descname"><span class="pre">test_fail_sep</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.test_fail_sep" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de error por el tipo del argumento de <code class="docutils literal notranslate"><span class="pre">seps</span></code></p>
+<p>Definición errada del argumento <code class="docutils literal notranslate"><span class="pre">sep</span></code> con un tipo <code class="docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">seps</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">,)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.test_fail_sep2">
+<span class="sig-name descname"><span class="pre">test_fail_sep2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.test_fail_sep2" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de error por el tipo del argumento de <code class="docutils literal notranslate"><span class="pre">seps</span></code></p>
+<p>Definición errada del argumento <code class="docutils literal notranslate"><span class="pre">sep</span></code> con un tipo <code class="docutils literal notranslate"><span class="pre">float</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">seps</span> <span class="o">=</span> <span class="mf">8.0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_funciones.ExpectedFailureTest.test_fail_sep3">
+<span class="sig-name descname"><span class="pre">test_fail_sep3</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_funciones.ExpectedFailureTest.test_fail_sep3" title="Permalink to this definition"></a></dt>
+<dd><p>Comprobación de error por el tipo de los elementos del argumento <code class="docutils literal notranslate"><span class="pre">seps</span></code></p>
+<p>Definición errada de los elementos del argumento <code class="docutils literal notranslate"><span class="pre">sep</span></code>: no son del tipo <code class="docutils literal notranslate"><span class="pre">str</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sep</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;;&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="funciones.html" class="btn btn-neutral float-left" title="funciones module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Marcial Mosqueda.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

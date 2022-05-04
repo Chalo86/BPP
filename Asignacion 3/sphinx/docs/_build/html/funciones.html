@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>funciones module &mdash; Asignacion #2 de BPP v.1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="test_funciones module" href="test_funciones.html" />
+    <link rel="prev" title="errors module" href="errors.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Asignacion #2 de BPP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">code</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="errors.html">errors module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">funciones module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#descripcion">Descripción</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#librerias-y-modulos">Librerías y módulos</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test_funciones.html">test_funciones module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Asignacion #2 de BPP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">code</a> &raquo;</li>
+      <li>funciones module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/funciones.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-funciones">
+<span id="funciones-module"></span><h1>funciones module<a class="headerlink" href="#module-funciones" title="Permalink to this headline"></a></h1>
+<section id="descripcion">
+<h2>Descripción<a class="headerlink" href="#descripcion" title="Permalink to this headline"></a></h2>
+<p>Este módulo define las funciones necesarias para la solución de la asignación #2 de BPP</p>
+<p>Las funciones creadas son:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_df()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#funciones.check" title="funciones.check"><code class="xref py py-func docutils literal notranslate"><span class="pre">check()</span></code></a></p></li>
+<li><p><a class="reference internal" href="#funciones.tarea" title="funciones.tarea"><code class="xref py py-func docutils literal notranslate"><span class="pre">tarea()</span></code></a></p></li>
+</ul>
+</section>
+<section id="librerias-y-modulos">
+<h2>Librerías y módulos<a class="headerlink" href="#librerias-y-modulos" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> librería requerida para la creación y gestión de DataFrames</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">plotly</span></code> necesario para la creación de las gráficas</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">os</span></code> para la creación del directorio donde se almacenará la gráfica</p></li>
+<li><p><a class="reference internal" href="errors.html#module-errors" title="errors"><code class="xref py py-mod docutils literal notranslate"><span class="pre">errors</span></code></a> excepciones especialmente definidas para la aplicación</p></li>
+</ul>
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones.create_df">
+<span class="sig-name descname"><span class="pre">create_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[',']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones.create_df" title="Permalink to this definition"></a></dt>
+<dd><p>Función responsable de importar el archivo <em>csv</em>, su validación y creación del DataFrame</p>
+<p>Asimismo, la función será capaz de generar distintas excepciones en caso de error</p>
+<p>La función <a class="reference internal" href="#funciones.create_df" title="funciones.create_df"><code class="xref py py-func docutils literal notranslate"><span class="pre">create_df()</span></code></a> validará:</p>
+<ul class="simple">
+<li><p>Que el DataFrame generado posea la misma cantidad de columnas que el <em>csv</em> suministrado</p></li>
+<li><p>Que las columnas del DataFrame sean las indicadas por el usuario</p></li>
+<li><p>Que no existan columnas vacías en el DataFrame</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<em>str</em>) – Representa el <code class="docutils literal notranslate"><span class="pre">path</span></code> donde se encuentra el fichero <em>csv</em></p></li>
+<li><p><strong>columns</strong> (<em>list</em>) – Representa la <code class="docutils literal notranslate"><span class="pre">lista</span></code> de columnas esperadas en el DataFrame</p></li>
+<li><p><strong>seps</strong> (<em>list</em><em>, </em><em>optional</em>) – Representa una <code class="docutils literal notranslate"><span class="pre">lista</span></code> de posibles separadores para el DataFrame, defaults to [ ‘ , ‘ , ]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>SepsError</strong> – Excepción generada en caso de no suministrar el separador correcto</p></li>
+<li><p><strong>ColumnError</strong> – Excepción generada en caso de no suministrar las columnas correctas</p></li>
+<li><p><strong>EmptyError</strong> – Excepción generada en caso de obtener una o varias columnas vacías</p></li>
+<li><p><strong>AssertionError</strong> – Excepción generada en caso de no suminitrar el tipo de dato correcto de los argumentos</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>El DataFrame generado del fichero <em>csv</em></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones.check">
+<span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones.check" title="Permalink to this definition"></a></dt>
+<dd><p>Función de soporte que nos permitirá validar los datos incluidos en el DataFrame</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La función <a class="reference internal" href="#funciones.check" title="funciones.check"><code class="xref py py-func docutils literal notranslate"><span class="pre">check()</span></code></a> ha sido diseñada para ser aplicada a través del método <code class="docutils literal notranslate"><span class="pre">apply</span></code>
+de la librería <code class="docutils literal notranslate"><span class="pre">pandas</span></code></p>
+</div>
+<p>Pasos que ejecuta la función:</p>
+<ul class="simple">
+<li><p>Se validará que los elementos del DataFrame sean númericos</p></li>
+<li><p>Se eliminarán las comillas simples y/o dobles de las celdas donde existan</p></li>
+<li><p>Se convertirán los errores y/o <strong>NaN</strong> en <cite>0</cite></p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>col</strong> (<em>pd.Series</em>) – Columna del DataFrame donde se realizará la verificación de los elementos</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>La columna cuyos elementos han sido validados y convertidos a un dtype numérico</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>pd.Series</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="funciones.tarea">
+<span class="sig-name descname"><span class="pre">tarea</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#funciones.tarea" title="Permalink to this definition"></a></dt>
+<dd><p>Función diseñada para la evaluación del DataFrame suministrado con el objetivo 
+responder las preguntas correspondientes a la asignación #1 de BPP</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Esta función no generará el return de una variable, sólo realiza la evaluación de las
+pregurntas e imprime en pantalla las respuestas correspondientes. A su vez, se generará
+un directorio <code class="docutils literal notranslate"><span class="pre">Imagenes</span></code> en el path del script con la gráfica requerida</p>
+</div>
+<p>Preguntas de la asigncación #2:</p>
+<ol class="arabic simple">
+<li><p>¿Qué mes se ha gastado más?</p></li>
+<li><p>¿Qué mes se ha ahorrado más?</p></li>
+<li><p>¿Cuál es la media de gastos del año?</p></li>
+<li><p>¿Cuál ha sido el gasto total a lo largo del año?</p></li>
+<li><p>¿Cuáles han sido los ingresos totales a lo largo del año?</p></li>
+<li><p>Gráfica de los ingresos a lo largo del año</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>pd.DataFrame</em>) – DataFrame que será analizado para responder a la asignación</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="errors.html" class="btn btn-neutral float-left" title="errors module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="test_funciones.html" class="btn btn-neutral float-right" title="test_funciones module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Marcial Mosqueda.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
